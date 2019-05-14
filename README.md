@@ -40,7 +40,7 @@ service docker start
 ```
 Build and run image:
 ```bash
-docker pull whuntssr/ssr_ssh_docker:lasts
+docker pull whuntssr/ssr_ssh_docker:latest
 docker run -d -p 2333:22 --name ssr_docker --restart=always whuntssr/ssr_ssh_docker
 docker logs ssr_docker
 ```
