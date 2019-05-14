@@ -59,6 +59,15 @@ In this case, `qJixrU8ToNxe4xRg` is the password allocated to the `root` user.
 
 Done!
 ```
+## About Image
+
+There is a startup bash at `/autostart.sh`, you can add your commands in it.
+It will run at the docker container start.
+
+Also there is a "ssrkeeper" bash at `/usr/local/shadowsocksr/runssr.sh`
+Its usage is here: https://github.com/whunt1/ssrkeeper
+
+In addition, iptables usage is here: https://github.com/whunt1/docker_manage_port
 
 ## Usage
 
