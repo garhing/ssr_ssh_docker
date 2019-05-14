@@ -32,7 +32,7 @@ RUN chmod +x /*.sh
 ADD runssr.sh /usr/local/shadowsocksr/runssr.sh
 RUN chmod +x /usr/local/shadowsocksr/*.sh
 # RUN [[ -e /usr/local/crontab.bak ]] && crontab -l > "/usr/local/crontab.bak" && sed -i "/runssr.sh/d" "/usr/local/crontab.bak"
-# RUN echo -e "\n * * * * * /bin/bash /usr/local/shadowsocksr/runssr.sh" >> "/usr/local/crontab.bak"
+# RUN echo -e "\n */1 * * * * /bin/bash /usr/local/shadowsocksr/runssr.sh" >> "/usr/local/crontab.bak"
 # RUN crontab "/usr/local/crontab.bak"
 
 EXPOSE 22
